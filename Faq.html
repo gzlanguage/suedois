@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Ljus bakgrundsfärg */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Textfärg */
+            font-family: 'Roboto', Arial, sans-serif; /* Använd en liknande typsnitt */
+        }
+        header {
+            background-color: #ffffff; /* Vit bakgrund */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.3em; /* Justerad teckenstorlek */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* Blå färg */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* Blå kant */
+            padding: 3px 6px; /* Minskat padding */
+            display: inline-block;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .faq-button {
+            color: #007BFF; /* Blå färg */
+            font-size: 0.9em; /* Minskat teckenstorlek */
+            padding: 3px 6px; /* Minskat padding */
+            border: 1px solid #007BFF; /* Blå kant */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Transparent bakgrund */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* Blå kant */
+            width: 100%;
+            margin-top: 0; /* Ta bort övre marginal */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* Textfärg */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .faq-content {
+            padding: 10px 20px; /* Minskat övre padding */
+            font-size: 0.85em;
+        }
+        .faq-content h2 {
+            font-size: 1.2em; /* Minskat storlek för FAQ-rubriker */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* Textfärg */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="faq-button">FAQ</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">FAQ - Vanliga Frågor</div>
+<div class="divider"></div>
+
+<div class="faq-content">
+    <h2>1. Vad är GZ och vad används det till?</h2>
+    <p>G-Z är en helt gratis webbaserad applikation som tillåter användare att skicka in sitt födelsedatum, födelseland och kön utan att behöva registrera sig. Den är utformad för att generera globala och nationella statistik om födslar, inklusive:</p>
+    <ul>
+        <li>Födslar per dag, månad och år.</li>
+        <li>Fördelning efter land, kön och ålder.</li>
+    </ul>
+    <p>Det huvudsakliga målet är att tillhandahålla tillgänglig demografisk data för en bättre förståelse av globala befolkningstrender.</p>
+
+    <h2>2. Är mina data anonyma?</h2>
+    <p>Ja, dina data är helt anonyma. Vi har utformat G-Z för att säkerställa att:</p>
+    <ul>
+        <li>Ingen data kan spåras tillbaka till en individuell användare.</li>
+        <li>Vi samlar inte in någon information som identifierar vem som har skickat vad. Var trygg, din identitet är skyddad och dina data aggregeras omedelbart.</li>
+    </ul>
+
+    <h2>3. Hur får jag veta om mina data har skickats?</h2>
+    <p>När dina data har skickats:</p>
+    <ul>
+        <li>Skicka-knappen kommer att ändra färg: orange under inskickning och grön när inskickningen är lyckad.</li>
+        <li>Texten på knappen kommer att ändras från "Skicka" till "Inskickad".</li>
+    </ul>
+    <p>Dessa indikatorer bekräftar att dina data har tagits emot.</p>
+
+    <h2>4. Kan jag ändra eller ta bort mina inskickningar?</h2>
+    <p>Ja, du har möjlighet att ta bort dina data omedelbart efter att du har skickat dem. Så här:</p>
+    <ul>
+        <li>En återställningsikon kommer att visas efter inskickningen.</li>
+        <li>Genom att klicka på denna ikon kommer dina data att tas bort helt från våra servrar.</li>
+    </ul>
+    <p>Men när du stänger webapplikationen eller sessionen löper ut, anonymiseras data irreversibelt och kan inte längre ändras eller tas bort. Vänligen se vår <a href="Confidentialité.html">Integritetspolicy '5'</a> för mer information.</p>
+
+    <h2>5. Vad händer om jag lämnar felaktig information?</h2>
+    <p>Vi uppmuntrar dig att skicka in korrekt och verifierad information för att säkerställa kvaliteten på statistiken. Om du märker ett fel efter inskickningen:</p>
+    <ul>
+        <li>Använd återställningsikonen för att ta bort dina data.</li>
+        <li>Du kan sedan skicka de korrigerade uppgifterna.</li>
+    </ul>
+
+    <h2>6. Varför stödja GZ?</h2>
+    <p>Även om GZ är gratis, behöver vi ditt stöd för att:</p>
+    <ul>
+        <li>Täcka kostnaderna för servrar och infrastruktur.</li>
+        <li>Finansiera djupare analyser och framtida projekt som kommer att gynna alla.</li>
+        <li>Möjliggöra kontinuerlig förbättring av applikationen och dess funktioner.</li>
+    </ul>
+    <p>Du kan stödja vår mission via PayPal eller andra bidragsmetoder.</p>
+
+    <h2>7. Varför följa GZ på sociala medier?</h2>
+    <p>Genom att följa oss på sociala medier kan du:</p>
+    <ul>
+        <li>Hålla dig informerad om nya analyser och demografiska trender.</li>
+        <li>Upptäcka regelbundna uppdateringar om vår globala statistik.</li>
+        <li>Delta i utbildande diskussioner kring globala demografiska data.</li>
+    </ul>
+    <p>Dessutom delar vi fascinerande information som härrör från vår statistik, samtidigt som vi håller dig informerad om våra nya projekt.</p>
+</div>
+
+<footer>
+    <p>©️ 2025 GZ</p>
+</footer>
+</body>
+</html>
 
