@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">G-Z</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Ljus bakgrundsfärg */
+            color: var(--text-color);
+            font-family: 'Roboto', Arial, sans-serif; /* Använd en liknande font */
+            padding: 20px;
+            margin: 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .header {
+            font-size: 1.8em;
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* Blå färg */
+            border: 1.5px solid #007BFF; /* Blå kant */
+            padding: 4px;
+            display: inline-block;
+            border-radius: 12px; /* Rundade hörn */
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* Kantfärg */
+            width: 100%;
+            margin: 5px 0;
+        }
+        .short-divider {
+            width: 50%;
+            margin: 10px auto;
+        }
+        .content {
+            text-align: center;
+            margin-top: 60px;
+        }
+        h1, h2 {
+            margin-bottom: 5px;
+            font-size: 2em;
+            text-decoration: underline;
+            color: #007BFF; /* Blå färg */
+        }
+        .social-message {
+            margin-top: 30px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Avstånd mellan ikoner */
+            margin-top: 20px;
+        }
+        .icon {
+            font-size: 30px; 
+            color: #007BFF; /* Blå färg */
+            transition: color 0.3s;
+            border: 1px solid #007BFF; /* Blå kant */
+            border-radius: 10px;
+            padding: 8px; 
+            background-color: rgba(0, 119, 190, 0.1); /* Ljus bakgrund */
+            display: inline-block;
+        }
+        .icon:hover {
+            color: #005f8d; /* Färg vid hover */
+            background-color: rgba(0, 119, 190, 0.2);
+        }
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 60px 0;
+        }
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #007BFF; /* Blå kant */
+        }
+        .or-divider::before {
+            margin-right: 10px;
+        }
+        .or-divider::after {
+            margin-left: 10px;
+        }
+        .copy-message {
+            margin-top: 30px;
+        }
+        .copy-button {
+            margin-top: 10px;
+            padding: 10px 17px;
+            border: 1px solid #007BFF; /* Blå kant */
+            border-radius: 13px;
+            background-color: rgba(0, 119, 190, 0.1); /* Ljus bakgrund */
+            color: #007BFF; /* Blå färg */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .copy-button:hover {
+            background-color: rgba(0, 119, 190, 0.1);
+            color: white;
+        }
+        .copy-status {
+            margin-top: 10px;
+            color: #007BFF; /* Blå färg */
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <div class="header-container">
+            <div class="header" translate="no"><strong>G-Z</strong></div>
+        </div>
+    </a>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <h1>Dela G-Z</h1>
+        <div class="short-divider"></div>
+        <p class="social-message">Låt oss upptäcka vem vi är och hur vi hör hemma i världen! Förutom underhållning, låt oss lära oss mer om våra generationer:</p>
+
+        <div class="social-icons">
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?text=Gå%20med%20i%20G-Z%20!%20Tillsammans,%20låt%20oss%20upptäcka%20de%20fascinerande%20hemligheterna%20i%20vår%20generation,%20mellan%20spännande%20upptäckter%20och%20underhållande%20ögonblick.%20Var%20en%20del%20av%20detta%20unika%20äventyr!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=Gå%20med%20i%20G-Z%20!%20Tillsammans,%20låt%20oss%20upptäcka%20de%20fascinerande%20hemligheterna%20i%20vår%20generation,%20mellan%20spännande%20upptäckter%20och%20underhållande%20ögonblick.%20Var%20en%20del%20av%20detta%20unika%20äventyr!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('WeChat')">
+                <i class="fab fa-weixin"></i>
+            </a>
+        </div>
+
+        <div class="or-divider">
+            <span style="color: #007BFF;">Eller</span> <!-- Blå färg -->
+        </div>
+
+        <p class="copy-message">Kopiera delningslänken:</p>
+        <button class="copy-button" onclick="copyLink()">Kopiera</button>
+        <p class="copy-status" id="copyStatus"></p>
+    </div>
+
+    
+    <script>
+        const shareText = "Gå med i G-Z! Tillsammans, låt oss upptäcka de fascinerande hemligheterna i vår generation, mellan spännande upptäckter och underhållande ögonblick. Var en del av detta unika äventyr! 🌟";
+        const shareLink = "https://www.g-z.online";
+
+        function copyLink() {
+            navigator.clipboard.writeText(shareLink).then(() => {
+                document.getElementById("copyStatus").innerText = "Följande delningslänk har kopierats till ditt urklipp: " + shareLink;
+            }).catch(err => {
+                console.error("Fel vid kopiering av text: ", err);
+                document.getElementById("copyStatus").innerText = "Fel vid kopiering av text.";
+            });
+        }
+
+        function share(platform) {
+            let url;
+            switch (platform) {
+                case 'Facebook':
+                    url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}&quote=${encodeURIComponent(shareText)}`;
+                    break;
+                case 'WeChat':
+                    alert("Delning på WeChat görs vanligtvis via appen.");
+                    return;
+                case 'Twitter':
+                    url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
+                    break;
+                case 'WhatsApp':
+                    url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}%20${encodeURIComponent(shareLink)}`;
+                    break;
+                case 'Telegram':
+                    url = `https://telegram.me/share/url?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
+                    break;
+            }
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
 
